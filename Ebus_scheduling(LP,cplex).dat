@@ -1,0 +1,28 @@
+/*********************************************
+ * OPL 20.1.0.0 Data
+ * Author: user
+ * Creation Date: 2023. 4. 12. at ¿ÀÈÄ 2:00:17
+ *********************************************/
+ tsize = 26;
+ bsize = 15;
+ capa = 290.4;
+ 
+ SheetConnection excelsheet("summerone.xlsx");
+ 
+ p from SheetRead(excelsheet, "p!B2:B25");
+ s from SheetRead(excelsheet, "p!C2:C25");
+ total from SheetRead(excelsheet, "bb!B2:B16");
+ U from SheetRead(excelsheet, "bb!C2:C16");
+ HA0 from SheetRead(excelsheet, "bb!D2:D16");
+ ave from SheetRead(excelsheet, "bb!E2:E16");
+ o from SheetRead(excelsheet, "o!B2:Y16");
+ i from SheetRead(excelsheet, "i!B2:Y16"); 
+ hb from SheetRead(excelsheet, "hb!B2:Y16");
+ alpha from SheetRead(excelsheet, "alpha!B2:Y16");
+
+ C to SheetWrite(excelsheet, "C!B2:Y16");
+ D to SheetWrite(excelsheet, "D!B2:Y16");
+ HA to SheetWrite(excelsheet, "HA!B2:Y16");
+ HB to SheetWrite(excelsheet, "HBB!B2:Y16");
+ I to SheetWrite(excelsheet, "II!B2:Y16");
+ O to SheetWrite(excelsheet, "OO!B2:Y16");
