@@ -1,0 +1,26 @@
+/*********************************************
+ * OPL 20.1.0.0 Data
+ * Author: Son Jeong Min
+ * Creation Date: 2023. 3. 29. at ¿ÀÈÄ 6:12:20
+ *********************************************/
+ bsize = 11;
+ tsize = 145;
+ isize = 187;
+ nsize = 8;
+ Emax = 0.8;
+ Emin = 0.2;
+ E_0 = 0.2;
+ C = 88;
+ U = 135;
+ ce = 0.85;
+ de = 0.85;
+ 
+ SheetConnection excelsheet("main2.xlsx");
+ 
+ tstart from SheetRead(excelsheet, "data1!A2:A188");
+ tend from SheetRead(excelsheet, "data1!B2:B188");
+ p from SheetRead(excelsheet, "data1!C2:C146");
+ s from SheetRead(excelsheet, "data1!D2:D146");
+ g from SheetRead(excelsheet, "data1!E2:E188");
+ cp from SheetRead(excelsheet, "data1!F2:F9");
+ dp from SheetRead(excelsheet, "data1!G2:G9");
